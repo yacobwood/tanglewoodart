@@ -20,17 +20,17 @@ export default function ArtistBio() {
         <p className="text-xl text-museum-cream/90 font-light">
           Dennis Wood is a contemporary oil painter whose work explores the
           delicate interplay between memory, landscape, and the passage of time. Based
-          in a converted fisherman's cottage on the Northumberland coast, he has spent
+          in a converted fisherman&apos;s cottage on the Northumberland coast, he has spent
           the last two decades developing a distinctive visual language that captures
           the ephemeral qualities of light and atmosphere.
         </p>
 
         <p>
-          Born in 1978 in Yorkshire, Dennis's early years were shaped by the dramatic
+          Born in 1978 in Yorkshire, Dennis&apos;s early years were shaped by the dramatic
           moorland landscapes of the North. She studied Fine Art at the Slade School of
           Art in London, where she graduated with distinction in 2000. During her time
           at the Slade, she was awarded the prestigious BP Portrait Award for her
-          painting "Winter Light on the Moors," which marked the beginning of her
+          painting &ldquo;Winter Light on the Moors,&rdquo; which marked the beginning of her
           exploration into atmospheric landscape painting.
         </p>
 
@@ -52,7 +52,7 @@ export default function ArtistBio() {
         </p>
 
         <p>
-          Dennis's paintings are characterized by their contemplative quality and
+          Dennis&apos;s paintings are characterized by their contemplative quality and
           masterful handling of light. She builds her images through multiple thin
           layers of oil paint, allowing each layer to dry before applying the next.
           This painstaking process, which can take several months for a single work,
@@ -72,7 +72,7 @@ export default function ArtistBio() {
         </p>
 
         <p>
-          Dennis's paintings are held in numerous private and public collections,
+          Dennis&apos;s paintings are held in numerous private and public collections,
           including the Government Art Collection, the Ashmolean Museum in Oxford, and
           the Laing Art Gallery in Newcastle. She has been the recipient of several
           awards, including the Winsor & Newton Award for Oil Painting and the

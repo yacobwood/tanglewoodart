@@ -60,7 +60,7 @@ export default function PrintsPage() {
             Fine Art Prints
           </h1>
           <p className="text-lg md:text-xl text-museum-cream/80 leading-relaxed mb-8">
-            Museum-quality giclée prints of Dennis's most beloved works. Each
+            Museum-quality giclée prints of Dennis&apos;s most beloved works. Each
             print is produced using archival inks and materials, ensuring
             exceptional color accuracy and longevity.
           </p>
@@ -301,7 +301,7 @@ export default function PrintsPage() {
                 Questions About Our Prints?
               </h3>
               <p className="text-museum-cream/70 mb-6">
-                We're happy to help you choose the perfect print for your space.
+                We&apos;re happy to help you choose the perfect print for your space.
               </p>
               <Button asChild size="lg" variant="primary">
                 <a href="mailto:dennis@tanglewoodart.com?subject=Print Inquiry">
