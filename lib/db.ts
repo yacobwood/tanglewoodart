@@ -1,14 +1,19 @@
 /**
  * Simple JSON File Database Helpers
- * For managing artworks and orders in JSON files
+ * For managing artworks and orders in JSON files (dev) or Vercel Blob (production)
  */
 
 import fs from 'fs/promises';
 import path from 'path';
+import { put, head } from '@vercel/blob';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const ARTWORKS_FILE = path.join(DATA_DIR, 'artworks.json');
 const ORDERS_FILE = path.join(DATA_DIR, 'orders.json');
+
+const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
+const BLOB_ARTWORKS_URL = process.env.BLOB_ARTWORKS_URL || '';
+const BLOB_ORDERS_URL = process.env.BLOB_ORDERS_URL || '';
 
 /**
  * Ensure data directory exists
@@ -22,24 +27,55 @@ async function ensureDataDir() {
 }
 
 /**
- * Read artworks from JSON file
+ * Read artworks from JSON file (dev) or Vercel Blob (production)
  */
 export async function readArtworks(): Promise<any[]> {
   try {
-    const data = await fs.readFile(ARTWORKS_FILE, 'utf-8');
-    return JSON.parse(data);
+    if (IS_PRODUCTION && BLOB_ARTWORKS_URL) {
+      // Fetch from Vercel Blob in production
+      const response = await fetch(BLOB_ARTWORKS_URL);
+      if (!response.ok) throw new Error('Failed to fetch from blob');
+      return await response.json();
+    } else {
+      // Use local file in development
+      const data = await fs.readFile(ARTWORKS_FILE, 'utf-8');
+      return JSON.parse(data);
+    }
   } catch (error) {
     console.error('Error reading artworks:', error);
-    return [];
+    // Fallback to local file if blob fails
+    try {
+      const data = await fs.readFile(ARTWORKS_FILE, 'utf-8');
+      return JSON.parse(data);
+    } catch {
+      return [];
+    }
   }
 }
 
 /**
- * Write artworks to JSON file
+ * Write artworks to JSON file (dev) or Vercel Blob (production)
  */
 export async function writeArtworks(artworks: any[]): Promise<void> {
-  await ensureDataDir();
-  await fs.writeFile(ARTWORKS_FILE, JSON.stringify(artworks, null, 2), 'utf-8');
+  const jsonData = JSON.stringify(artworks, null, 2);
+
+  if (IS_PRODUCTION) {
+    // Upload to Vercel Blob in production
+    const blob = await put('artworks.json', jsonData, {
+      access: 'public',
+      contentType: 'application/json',
+      token: process.env.BLOB_READ_WRITE_TOKEN,
+    });
+
+    // Store the URL for future reads (this should be set in env vars)
+    if (!BLOB_ARTWORKS_URL) {
+      console.log('Set BLOB_ARTWORKS_URL to:', blob.url);
+    }
+  } else {
+    // Use local file in development
+    await ensureDataDir();
+    await fs.writeFile(ARTWORKS_FILE, jsonData, 'utf-8');
+  }
 }
 
 /**
