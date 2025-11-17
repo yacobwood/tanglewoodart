@@ -47,7 +47,7 @@ export default function NotFound() {
             Page Not Found
           </h2>
           <p className="text-lg text-museum-cream/70 max-w-xl mx-auto leading-relaxed">
-            Like a painting that exists only in memory, the page you're looking
+            Like a painting that exists only in memory, the page you&apos;re looking
             for seems to have disappeared into the mist.
           </p>
         </div>
@@ -117,7 +117,7 @@ export default function NotFound() {
                 Contact Us
               </h3>
               <p className="text-sm text-museum-cream/60">
-                We're here to help
+                We&apos;re here to help
               </p>
             </div>
           </a>

@@ -154,7 +154,7 @@ export default function AboutPage() {
             <p>
               My work is an attempt to capture not just what the landscape looks
               like, but how it feels. Growing up among the Yorkshire moors and now
-              living on the Northumberland coast, I've always been drawn to places
+              living on the Northumberland coast, I&apos;ve always been drawn to places
               where earth meets sky, where boundaries dissolve, and where time seems
               to move differently.
             </p>
@@ -167,9 +167,9 @@ export default function AboutPage() {
               between seeing and remembering.
             </p>
             <p>
-              I'm interested in moments of transition: dawn and dusk, incoming
+              I&apos;m interested in moments of transition: dawn and dusk, incoming
               tides, clearing storms. These are times when the world is in flux,
-              when light is at its most magical, and when we're reminded of the
+              when light is at its most magical, and when we&apos;re reminded of the
               constant change that underlies all things.
             </p>
             <p className="text-museum-cream italic">
@@ -280,7 +280,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-lg text-museum-cream/70 mb-8 max-w-2xl mx-auto">
               Interested in commissioning a work or have questions about available
-              paintings? I'd love to hear from you.
+              paintings? I&apos;d love to hear from you.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
