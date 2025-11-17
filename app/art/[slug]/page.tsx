@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: ArtworkPageProps): Promise<Me
   const description = artwork.description.substring(0, 155);
 
   return {
-    title: `${artwork.title} - ${artwork.artist} | Tanglewood Art Gallery`,
+    title: `${artwork.title} - ${artwork.artist} | Tanglewood Art`,
     description,
     openGraph: {
       title: `${artwork.title} by ${artwork.artist}`,

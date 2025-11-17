@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "art for sale",
   ],
   openGraph: {
-    title: "Gallery | Tanglewood Art Gallery",
+    title: "Gallery | Tanglewood Art",
     description:
       "Browse the complete collection of original oil paintings and fine art prints by Dennis Wood.",
     type: "website",

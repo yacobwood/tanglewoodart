@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'contemporary art prints',
   ],
   openGraph: {
-    title: 'Fine Art Prints | Tanglewood Art Gallery',
+    title: 'Fine Art Prints | Tanglewood Art',
     description:
       'Museum-quality giclée prints of Dennis Wood\'s atmospheric landscape paintings. Available in multiple sizes on archival paper and canvas.',
     type: 'website',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: '/images/prints-collection.jpg',
         width: 1200,
         height: 630,
-        alt: 'Tanglewood Art Gallery Fine Art Prints',
+        alt: 'Tanglewood Art Fine Art Prints',
       },
     ],
   },

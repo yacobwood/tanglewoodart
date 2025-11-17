@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     'Discover original oil paintings by Dennis Wood. Explore contemplative landscapes, portraits, and abstract works inspired by the Northumberland coast. Available for purchase.',
   openGraph: {
-    title: 'Tanglewood Art Gallery | Original Oil Paintings',
+    title: 'Tanglewood Art | Original Oil Paintings',
     description:
       'Discover original oil paintings by Dennis Wood. Explore contemplative landscapes, portraits, and abstract works inspired by the Northumberland coast.',
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: '/sample-art/mist-over-borrowed-light.jpg',
         width: 1200,
         height: 630,
-        alt: 'Featured artwork from Tanglewood Art Gallery',
+        alt: 'Featured artwork from Tanglewood Art',
       },
     ],
   },

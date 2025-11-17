@@ -1,5 +1,5 @@
 /**
- * Tanglewood Art Gallery - Cart Page
+ * Tanglewood Art - Cart Page
  * Full cart page with items list and order summary
  */
 
@@ -8,7 +8,7 @@ import type { Metadata } from 'next';
 import { CartPageClient } from './cart-page-client';
 
 export const metadata: Metadata = {
-  title: 'Shopping Cart - Tanglewood Art Gallery',
+  title: 'Shopping Cart - Tanglewood Art',
   description: 'Review your selected artworks and prints before checkout.',
 };
 

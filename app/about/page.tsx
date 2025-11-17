@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     'art studio',
   ],
   openGraph: {
-    title: 'About Dennis Wood | Tanglewood Art Gallery',
+    title: 'About Dennis Wood | Tanglewood Art',
     description:
       'Learn about Dennis Wood, a contemporary oil painter whose work explores the delicate interplay between memory, landscape, and the passage of time.',
     type: 'profile',

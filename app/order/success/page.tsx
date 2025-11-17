@@ -1,5 +1,5 @@
 /**
- * Tanglewood Art Gallery - Order Success Page
+ * Tanglewood Art - Order Success Page
  * Order confirmation page after successful payment
  */
 
@@ -8,7 +8,7 @@ import type { Metadata } from 'next';
 import { OrderSuccessClient } from './order-success-client';
 
 export const metadata: Metadata = {
-  title: 'Order Confirmed - Tanglewood Art Gallery',
+  title: 'Order Confirmed - Tanglewood Art',
   description: 'Your order has been successfully placed.',
 };
 

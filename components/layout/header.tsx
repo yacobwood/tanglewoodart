@@ -62,7 +62,7 @@ export default function Header() {
             >
               <div className="flex flex-col">
                 <span className="font-serif text-xl text-museum-cream tracking-wide transition-colors group-hover:text-museum-gold sm:text-2xl">
-                  Tanglewood Art Gallery
+                  Tanglewood Art
                 </span>
                 <div className="h-px w-0 bg-museum-gold transition-all duration-300 group-hover:w-full" />
               </div>

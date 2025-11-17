@@ -156,7 +156,7 @@ export default function Footer() {
         <div className="mt-12 border-t border-museum-slate/30 pt-8">
           <div className="flex flex-col gap-4 text-center text-sm text-museum-cream/60 md:flex-row md:justify-between md:text-left">
             <p>
-              &copy; {currentYear} Tanglewood Art Gallery. All rights reserved.
+              &copy; {currentYear} Tanglewood Art. All rights reserved.
             </p>
             <p className="font-serif italic">
               Original oil paintings by Dennis Wood
