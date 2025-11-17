@@ -103,7 +103,7 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
       shipping: 0, // Will be calculated from line items
       tax: session.total_details?.amount_tax || 0,
       total: session.amount_total || 0,
-      items: [], // Will be populated from line items
+      items: [] as Array<{ artworkId: string; type: string; quantity: number; price: number }>, // Will be populated from line items
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
       paidAt: new Date().toISOString(),
