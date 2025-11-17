@@ -1,0 +1,25 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Minimal gallery wall gradient background -->
+  <defs>
+    <linearGradient id="galleryGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8e8e8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="floor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d0d0d0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c5c5c5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Wall (light) -->
+  <rect x="0" y="0" width="1920" height="650" fill="url(#galleryGrad)"/>
+
+  <!-- Floor -->
+  <rect x="0" y="650" width="1920" height="430" fill="url(#floor)"/>
+
+  <!-- Wall-floor junction shadow -->
+  <rect x="0" y="640" width="1920" height="20" fill="rgba(0,0,0,0.05)"/>
+
+  <!-- Subtle spotlight effect -->
+  <ellipse cx="960" cy="300" rx="500" ry="300" fill="rgba(255,255,255,0.3)" opacity="0.5"/>
+</svg>

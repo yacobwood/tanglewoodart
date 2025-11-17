@@ -1,0 +1,214 @@
+/**
+ * Tanglewood Art Gallery - Global Styles
+ * Museum in the Dark theme with Tailwind CSS
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties for Theme */
+:root {
+  /* Museum in the Dark color palette */
+  --museum-dark: #1a1a1d;
+  --museum-charcoal: #2d2d30;
+  --museum-slate: #4e4e50;
+  --museum-gold: #d4af37;
+  --museum-gold-light: #f0d677;
+  --museum-cream: #f5f5dc;
+
+  /* Spotlight effect */
+  --spotlight: rgba(255, 255, 255, 0.05);
+
+  /* Shadows */
+  --shadow-spotlight: 0 0 60px 30px rgba(212, 175, 55, 0.15);
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+
+  /* Transitions */
+  --transition-quick: 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  --transition-standard: 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  --transition-dramatic: 600ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* Base Styles */
+@layer base {
+  * {
+    @apply border-museum-slate;
+  }
+
+  html {
+    @apply scroll-smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-museum-dark text-museum-cream;
+    min-height: 100vh;
+  }
+
+  /* Focus visible styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-museum-gold ring-offset-2 ring-offset-museum-dark;
+  }
+
+  /* Improve text rendering */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-balance;
+  }
+
+  p {
+    @apply text-pretty;
+  }
+}
+
+/* Custom Components */
+@layer components {
+  /* Button variants */
+  .btn-primary {
+    @apply rounded-lg bg-museum-gold px-6 py-3 font-semibold text-museum-dark transition-all hover:bg-museum-gold-light hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-museum-gold focus-visible:ring-offset-2 focus-visible:ring-offset-museum-dark;
+  }
+
+  .btn-secondary {
+    @apply rounded-lg border-2 border-museum-gold bg-transparent px-6 py-3 font-semibold text-museum-gold transition-all hover:bg-museum-gold hover:text-museum-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-museum-gold focus-visible:ring-offset-2 focus-visible:ring-offset-museum-dark;
+  }
+
+  .btn-ghost {
+    @apply relative text-museum-cream transition-colors hover:text-museum-gold after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-museum-gold after:transition-all hover:after:w-full focus-visible:outline-none focus-visible:text-museum-gold;
+  }
+
+  /* Card styles */
+  .card {
+    @apply rounded-lg border border-museum-slate bg-museum-charcoal p-6 shadow-md transition-all;
+  }
+
+  .card-hover {
+    @apply hover:scale-[1.02] hover:border-museum-gold/50 hover:shadow-lg;
+  }
+
+  /* Input styles */
+  .input {
+    @apply rounded-lg border border-museum-slate bg-museum-charcoal px-4 py-3 text-museum-cream placeholder:text-museum-slate transition-colors focus:border-museum-gold focus:outline-none focus:ring-2 focus:ring-museum-gold focus:ring-offset-2 focus:ring-offset-museum-dark;
+  }
+
+  /* Label styles */
+  .label {
+    @apply mb-2 block text-sm font-medium uppercase tracking-wider text-museum-gold;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-12 md:py-16 lg:py-24;
+  }
+
+  /* Container */
+  .container-narrow {
+    @apply mx-auto max-w-4xl px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  /* Text balance and pretty for typography */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Backdrop blur utilities */
+  .backdrop-blur-museum {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Custom scrollbar for museum theme */
+  .scrollbar-museum {
+    scrollbar-width: thin;
+    scrollbar-color: var(--museum-gold) var(--museum-charcoal);
+  }
+
+  .scrollbar-museum::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-museum::-webkit-scrollbar-track {
+    background: var(--museum-charcoal);
+  }
+
+  .scrollbar-museum::-webkit-scrollbar-thumb {
+    background: var(--museum-gold);
+    border-radius: 4px;
+  }
+
+  .scrollbar-museum::-webkit-scrollbar-thumb:hover {
+    background: var(--museum-gold-light);
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    @apply bg-white text-black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

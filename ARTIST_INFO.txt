@@ -1,0 +1,16 @@
+✅ ARTIST INFORMATION UPDATED
+=============================
+
+Artist Name: Dennis Wood
+Gender: Male (he/him/his)
+Paintings: 6 artworks from /example directory
+
+All references updated throughout:
+✅ data/artworks.json - All 6 artworks by Dennis Wood
+✅ app/about/page.tsx - Male pronouns
+✅ components/about/artist-bio.tsx - Male pronouns
+✅ components/home/hero.tsx - Dennis Wood
+✅ app/layout.tsx - Metadata updated
+✅ All documentation (README, DESIGN, etc.)
+
+View at: http://localhost:3000

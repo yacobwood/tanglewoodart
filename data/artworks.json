@@ -1,0 +1,304 @@
+[
+  {
+    "id": "mist-over-borrowed-light",
+    "title": "Mist Over Borrowed Light",
+    "artist": "Dennis Wood",
+    "year": 2024,
+    "medium": "Oil on canvas",
+    "dimensions": {
+      "width": 76,
+      "height": 61,
+      "unit": "cm"
+    },
+    "category": "landscape",
+    "description": "A contemplative study of early morning coastal fog rolling over rocky outcrops, where the sun's first rays create pools of golden warmth against cool grays. The interplay between the ethereal mist and solid earth explores the threshold between presence and absence.",
+    "story": "Created during a solitary residency on the Northumberland coast, this piece captures the fleeting moments when sea fog transforms familiar landscapes into something otherworldly.",
+    "price": 595,
+    "available": false,
+    "featured": false,
+    "series": "Coastal Meditations",
+    "images": {
+      "main": "/sample-art/optimized/artwork1.jpeg",
+      "detail": "/sample-art/optimized/artwork1.jpeg"
+    },
+    "prints": [
+      {
+        "size": "A4",
+        "dimensions": "21 x 29.7 cm",
+        "price": 4500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      },
+      {
+        "size": "A3",
+        "dimensions": "29.7 x 42 cm",
+        "price": 8500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      },
+      {
+        "size": "A2",
+        "dimensions": "42 x 59.4 cm",
+        "price": 16500,
+        "finishes": [
+          "matte",
+          "glossy",
+          "canvas"
+        ]
+      }
+    ],
+    "orientation": "auto"
+  },
+  {
+    "id": "the-weight-of-amber-hours",
+    "title": "The Weight of Amber Hours",
+    "artist": "Dennis Wood",
+    "year": 2023,
+    "medium": "Oil on canvas",
+    "dimensions": {
+      "width": 91,
+      "height": 71,
+      "unit": "cm"
+    },
+    "category": "portrait",
+    "description": "An intimate portrait capturing a moment of quiet introspection, bathed in the warm, honeyed light of late afternoon. The subject's gaze is directed beyond the frame, suggesting internal contemplation rather than engagement with the viewer.",
+    "story": "Painted over the course of three months, this work explores how afternoon light can make time feel almost tangible, as though each hour has physical weight and presence.",
+    "price": 995,
+    "available": false,
+    "featured": false,
+    "series": null,
+    "images": {
+      "main": "/sample-art/optimized/artwork2.jpeg",
+      "detail": "/sample-art/optimized/artwork2.jpeg"
+    },
+    "prints": [
+      {
+        "size": "A4",
+        "dimensions": "21 x 29.7 cm",
+        "price": 4500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      },
+      {
+        "size": "A3",
+        "dimensions": "29.7 x 42 cm",
+        "price": 8500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      },
+      {
+        "size": "A2",
+        "dimensions": "42 x 59.4 cm",
+        "price": 16500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      }
+    ],
+    "orientation": "auto"
+  },
+  {
+    "id": "remnants-of-tide",
+    "title": "Remnants of Tide",
+    "artist": "Dennis Wood",
+    "year": 2024,
+    "medium": "Oil on board",
+    "dimensions": {
+      "width": 30,
+      "height": 40,
+      "unit": "cm"
+    },
+    "category": "seascape",
+    "description": "A study of the shoreline at low tide, where retreating waters leave behind patterns of wet sand, scattered seaweed, and pools reflecting an overcast sky. The muted palette of grays, blues, and earth tones captures the quiet beauty of the liminal space between sea and land.",
+    "story": "Part of an ongoing series documenting the daily transformations of a single stretch of beach near the artist's studio. This particular piece was painted en plein air during a February afternoon.",
+    "price": 995,
+    "available": true,
+    "featured": false,
+    "series": "Coastal Meditations",
+    "images": {
+      "main": "/sample-art/optimized/artwork3.jpeg",
+      "detail": "/sample-art/optimized/artwork3.jpeg"
+    },
+    "prints": [
+      {
+        "size": "A4",
+        "dimensions": "21 x 29.7 cm",
+        "price": 4500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      },
+      {
+        "size": "A3",
+        "dimensions": "29.7 x 42 cm",
+        "price": 8500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      }
+    ],
+    "orientation": "auto"
+  },
+  {
+    "id": "convergence-in-viridian",
+    "title": "Convergence in Viridian",
+    "artist": "Dennis Wood",
+    "year": 2022,
+    "medium": "Oil on canvas",
+    "dimensions": {
+      "width": 100,
+      "height": 100,
+      "unit": "cm"
+    },
+    "category": "portrait",
+    "description": "A large-scale abstract composition exploring the intersection of organic and geometric forms through a predominantly green palette ranging from deep forest to brilliant emerald. Layered brushstrokes create depth and movement.",
+    "story": "Inspired by observing the patterns of leaf coverage in ancient woodland, this piece began as landscape studies but evolved into pure abstraction.",
+    "price": 1495,
+    "available": true,
+    "featured": true,
+    "series": "Chromatic Studies",
+    "images": {
+      "main": "/sample-art/optimized/artwork4.jpeg",
+      "detail": "/sample-art/optimized/artwork4.jpeg"
+    },
+    "prints": [
+      {
+        "size": "A4",
+        "dimensions": "21 x 29.7 cm",
+        "price": 4500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      },
+      {
+        "size": "A3",
+        "dimensions": "29.7 x 42 cm",
+        "price": 8500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      },
+      {
+        "size": "A2",
+        "dimensions": "42 x 59.4 cm",
+        "price": 16500,
+        "finishes": [
+          "matte",
+          "glossy",
+          "canvas"
+        ]
+      }
+    ],
+    "orientation": "auto"
+  },
+  {
+    "id": "veiled-crossing-at-dusk",
+    "title": "Veiled Crossing at Dusk",
+    "artist": "Dennis Wood",
+    "year": 2023,
+    "medium": "Oil on canvas",
+    "dimensions": {
+      "width": 61,
+      "height": 81,
+      "unit": "cm"
+    },
+    "category": "portrait",
+    "description": "A moody twilight scene depicting a small wooden bridge partially obscured by evening mist. The fading light casts long shadows while warm remnants of sunset glow against deepening purples and blues.",
+    "story": "Painted from memory after evening walks near the artist's childhood home, this work captures the mysterious quality of familiar places transformed by fading light and rising mist.",
+    "price": 1495,
+    "available": true,
+    "featured": true,
+    "series": null,
+    "images": {
+      "main": "/sample-art/optimized/artwork5.jpeg",
+      "detail": "/sample-art/optimized/artwork5.jpeg"
+    },
+    "prints": [
+      {
+        "size": "A4",
+        "dimensions": "21 x 29.7 cm",
+        "price": 4500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      },
+      {
+        "size": "A3",
+        "dimensions": "29.7 x 42 cm",
+        "price": 8500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      },
+      {
+        "size": "A2",
+        "dimensions": "42 x 59.4 cm",
+        "price": 16500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      }
+    ],
+    "orientation": "auto"
+  },
+  {
+    "id": "still-life-with-winter-branches",
+    "title": "Still Life with Winter Branches",
+    "artist": "Dennis Wood",
+    "year": 2024,
+    "medium": "Oil on canvas",
+    "dimensions": {
+      "width": 50,
+      "height": 70,
+      "unit": "cm"
+    },
+    "category": "portrait",
+    "description": "A vertical composition featuring bare winter branches arranged in a simple ceramic vessel against a neutral background. The stark beauty of dormant wood contrasts with subtle variations in the painted surface, creating a meditation on simplicity and form.",
+    "story": "This piece emerged from studio experiments with limited palettes and minimal subject matter, seeking to find richness and complexity within apparent simplicity.",
+    "price": 1495,
+    "available": true,
+    "featured": true,
+    "series": null,
+    "images": {
+      "main": "/sample-art/optimized/artwork6.jpeg",
+      "detail": "/sample-art/optimized/artwork6.jpeg"
+    },
+    "prints": [
+      {
+        "size": "A4",
+        "dimensions": "21 x 29.7 cm",
+        "price": 4500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      },
+      {
+        "size": "A3",
+        "dimensions": "29.7 x 42 cm",
+        "price": 8500,
+        "finishes": [
+          "matte",
+          "glossy"
+        ]
+      }
+    ],
+    "orientation": "auto"
+  }
+]
