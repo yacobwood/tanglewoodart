@@ -36,6 +36,11 @@ export async function readArtworks(): Promise<any[]> {
       const response = await fetch(BLOB_ARTWORKS_URL);
       if (!response.ok) throw new Error('Failed to fetch from blob');
       return await response.json();
+    } else if (IS_PRODUCTION) {
+      // In production but BLOB_ARTWORKS_URL not set yet
+      // Return empty array - blob will be created on first write
+      console.warn('BLOB_ARTWORKS_URL not set. Blob will be created on first write.');
+      return [];
     } else {
       // Use local file in development
       const data = await fs.readFile(ARTWORKS_FILE, 'utf-8');
@@ -43,13 +48,16 @@ export async function readArtworks(): Promise<any[]> {
     }
   } catch (error) {
     console.error('Error reading artworks:', error);
-    // Fallback to local file if blob fails
-    try {
-      const data = await fs.readFile(ARTWORKS_FILE, 'utf-8');
-      return JSON.parse(data);
-    } catch {
-      return [];
+    // Only try local file fallback in development
+    if (!IS_PRODUCTION) {
+      try {
+        const data = await fs.readFile(ARTWORKS_FILE, 'utf-8');
+        return JSON.parse(data);
+      } catch {
+        return [];
+      }
     }
+    return [];
   }
 }
 
@@ -61,13 +69,17 @@ export async function writeArtworks(artworks: any[]): Promise<void> {
 
   if (IS_PRODUCTION) {
     // Upload to Vercel Blob in production
+    // Allow overwriting to keep the same filename and URL
     const blob = await put('artworks.json', jsonData, {
       access: 'public',
       contentType: 'application/json',
       token: process.env.BLOB_READ_WRITE_TOKEN,
+      addRandomSuffix: false,
+      allowOverwrite: true,
+      cacheControlMaxAge: 0, // Disable caching to ensure fresh data
     });
 
-    // Store the URL for future reads (this should be set in env vars)
+    // Log the URL so it can be set as BLOB_ARTWORKS_URL environment variable
     if (!BLOB_ARTWORKS_URL) {
       console.log('Set BLOB_ARTWORKS_URL to:', blob.url);
     }
