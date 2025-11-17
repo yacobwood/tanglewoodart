@@ -2,6 +2,8 @@
 
 A polished, modern ecommerce website for an oil-on-canvas artist, featuring original paintings and fine art prints. Built with Next.js 14, TypeScript, Tailwind CSS, and Stripe for payments.
 
+**Live Site**: [www.tanglewoodart.co.uk](https://www.tanglewoodart.co.uk)
+
 **Design Theme**: Museum in the Dark — A sophisticated gallery experience with dramatic lighting, gold accents, and elegant typography.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-gold) ![Next.js](https://img.shields.io/badge/Next.js-14-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue) ![License](https://img.shields.io/badge/license-MIT-green)
