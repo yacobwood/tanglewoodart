@@ -14,19 +14,22 @@ interface ImageViewerProps {
 export default function ImageViewer({ artwork }: ImageViewerProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
-  // Calculate aspect ratio from artwork dimensions
+  // Calculate exact aspect ratio from artwork dimensions
   const aspectRatio = artwork.dimensions.width / artwork.dimensions.height;
-  const aspectClass = aspectRatio > 1 ? 'aspect-[16/9]' : aspectRatio < 1 ? 'aspect-[3/4]' : 'aspect-square';
+  const paddingBottom = `${(1 / aspectRatio) * 100}%`;
 
   return (
     <div className="space-y-4">
       {/* Main Image */}
-      <div className={`group relative ${aspectClass} overflow-hidden rounded-lg border border-museum-slate bg-museum-charcoal`}>
+      <div
+        className="group relative overflow-hidden rounded-lg border border-museum-slate bg-museum-charcoal"
+        style={{ paddingBottom }}
+      >
         <Image
           src={artwork.images[0]?.url || ''}
           alt={artwork.images[0]?.alt || artwork.title}
           fill
-          className="object-contain transition-transform duration-500 group-hover:scale-105"
+          className="absolute inset-0 h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
           quality={75}
           priority
