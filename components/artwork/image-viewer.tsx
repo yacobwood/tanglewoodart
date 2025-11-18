@@ -2,10 +2,9 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Maximize2, Eye } from 'lucide-react';
+import { Maximize2 } from 'lucide-react';
 import { Artwork } from '@/lib/artworks';
 import Lightbox from './lightbox';
-import WallMockupViewer from './wall-mockup-viewer';
 import { Button } from '@/components/ui/button';
 
 interface ImageViewerProps {
@@ -14,12 +13,15 @@ interface ImageViewerProps {
 
 export default function ImageViewer({ artwork }: ImageViewerProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [showWallMockup, setShowWallMockup] = useState(false);
+
+  // Calculate aspect ratio from artwork dimensions
+  const aspectRatio = artwork.dimensions.width / artwork.dimensions.height;
+  const aspectClass = aspectRatio > 1 ? 'aspect-[16/9]' : aspectRatio < 1 ? 'aspect-[3/4]' : 'aspect-square';
 
   return (
     <div className="space-y-4">
       {/* Main Image */}
-      <div className="group relative aspect-[4/5] overflow-hidden rounded-lg border border-museum-slate bg-museum-charcoal">
+      <div className={`group relative ${aspectClass} overflow-hidden rounded-lg border border-museum-slate bg-museum-charcoal`}>
         <Image
           src={artwork.images[0]?.url || ''}
           alt={artwork.images[0]?.alt || artwork.title}
@@ -43,30 +45,16 @@ export default function ImageViewer({ artwork }: ImageViewerProps) {
         </button>
       </div>
 
-      {/* Action Buttons */}
-      <div className="flex gap-3">
-        <Button
-          variant="secondary"
-          size="md"
-          onClick={() => setLightboxOpen(true)}
-          className="flex-1"
-        >
-          <Maximize2 className="mr-2 h-4 w-4" />
-          View Full Size
-        </Button>
-        <Button
-          variant="secondary"
-          size="md"
-          onClick={() => setShowWallMockup(!showWallMockup)}
-          className="flex-1"
-        >
-          <Eye className="mr-2 h-4 w-4" />
-          {showWallMockup ? 'Hide' : 'View'} on Wall
-        </Button>
-      </div>
-
-      {/* Wall Mockup Viewer */}
-      {showWallMockup && <WallMockupViewer artwork={artwork} />}
+      {/* Action Button */}
+      <Button
+        variant="secondary"
+        size="md"
+        onClick={() => setLightboxOpen(true)}
+        className="w-full"
+      >
+        <Maximize2 className="mr-2 h-4 w-4" />
+        View Full Size
+      </Button>
 
       {/* Lightbox */}
       {lightboxOpen && (
