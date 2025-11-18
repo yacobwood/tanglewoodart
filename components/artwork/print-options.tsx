@@ -80,7 +80,7 @@ export default function PrintOptions({ artwork }: PrintOptionsProps) {
         <label className="block text-xs font-semibold uppercase tracking-wider text-museum-gold">
           Select Size
         </label>
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-2 gap-2">
           {printSizes.map((print) => (
             <button
               key={print.size}

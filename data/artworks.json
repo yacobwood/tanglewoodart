@@ -39,16 +39,6 @@
           "matte",
           "glossy"
         ]
-      },
-      {
-        "size": "A2",
-        "dimensions": "42 x 59.4 cm",
-        "price": 16500,
-        "finishes": [
-          "matte",
-          "glossy",
-          "canvas"
-        ]
       }
     ],
     "orientation": "auto"
@@ -89,15 +79,6 @@
         "size": "A3",
         "dimensions": "29.7 x 42 cm",
         "price": 8500,
-        "finishes": [
-          "matte",
-          "glossy"
-        ]
-      },
-      {
-        "size": "A2",
-        "dimensions": "42 x 59.4 cm",
-        "price": 16500,
         "finishes": [
           "matte",
           "glossy"
@@ -190,16 +171,6 @@
           "matte",
           "glossy"
         ]
-      },
-      {
-        "size": "A2",
-        "dimensions": "42 x 59.4 cm",
-        "price": 16500,
-        "finishes": [
-          "matte",
-          "glossy",
-          "canvas"
-        ]
       }
     ],
     "orientation": "auto"
@@ -240,15 +211,6 @@
         "size": "A3",
         "dimensions": "29.7 x 42 cm",
         "price": 8500,
-        "finishes": [
-          "matte",
-          "glossy"
-        ]
-      },
-      {
-        "size": "A2",
-        "dimensions": "42 x 59.4 cm",
-        "price": 16500,
         "finishes": [
           "matte",
           "glossy"
