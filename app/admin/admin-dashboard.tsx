@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
@@ -182,11 +183,15 @@ export default function AdminDashboard({ artworks: initialArtworks }: AdminDashb
                       className="hover:bg-museum-dark transition-colors"
                     >
                       <td className="px-6 py-4">
-                        <img
-                          src={artwork.images.main}
-                          alt={artwork.title}
-                          className="w-16 h-16 object-cover rounded border border-museum-slate"
-                        />
+                        <div className="relative w-16 h-16">
+                          <Image
+                            src={artwork.images.main}
+                            alt={artwork.title}
+                            fill
+                            className="object-cover rounded border border-museum-slate"
+                            sizes="64px"
+                          />
+                        </div>
                       </td>
                       <td className="px-6 py-4">
                         <div className="text-museum-cream font-sans font-medium">
